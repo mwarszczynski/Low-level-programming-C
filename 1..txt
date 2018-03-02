@@ -1,0 +1,27 @@
+//	Napisz funkcjê do sprawdzania, czy drugi z dwóch parametrów ca³kowitych (typu unsigned int) jest podzielnikiem pierwszego. 
+//	Wartoœci¹ zwrotn¹ funkcji jest 1, gdy drugi parametr jest podzielnikiem pierwszego, 0 w przeciwnym przypadku.
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int checkIf( unsigned int a, unsigned int b)
+{
+    //  int c = a % b;
+    //  printf("%d\n",c);
+    if(a % b)
+    {
+        return 0;
+    }
+    return 1;
+}
+
+int main(void)
+{
+    int a = 10;
+    int b = 5;
+
+    checkIf(a,b);
+
+    return 0;
+}
+
